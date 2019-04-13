@@ -30,7 +30,7 @@ while($initX < $ending) {
     $y2 = $y1 + $halfH*getEquationResult($x1, $y1);
     if (abs($y - $y2) >= $accuracy) {
         echo '<br>Итерация ' . $i . ':<br>y<sub>2</sub> = ' . formatFloat($y2) . ', y = ' . formatFloat($y);
-        echo '<br> |y<sub>2</sub> - y| > ' . $accuracy . '<br>Следовательно, необходимо уменшить шаг h:<br>Предыдущий шаг h: ' .
+        echo '<br> |y<sub>2</sub> - y| > ' . $accuracy . '<br>Следовательно, необходимо уменьшить шаг h:<br>Предыдущий шаг h: ' .
             formatFloat($h) . '. Новый шаг h = h/2: ' . formatFloat($h/2) . '<br>';
         $h /= 2;
     } else {
