@@ -8,6 +8,8 @@ $variables = [
 ];
 $x = $beginning;
 $i = 1;
+echo 'Отрезок: [' . $beginning . ', ' . $ending . ']. Шаг h: ' . $h .  '. N = ' . abs($ending - $beginning) / $h . '.<br><br>';
+
 while ($x <= $ending) {
     echo $i . '-ая итерация:<br>';
     $x += $h;
