@@ -11,8 +11,8 @@ $i = 1;
 echo 'Отрезок: [' . $beginning . ', ' . $ending . ']. Шаг h: ' . $h .  '. N = ' . abs($ending - $beginning) / $h . '.<br><br>';
 
 while ($x <= $ending) {
-    echo $i . '-ая итерация:<br>';
     $x += $h;
+    echo $i . '-ая итерация:<br>x = ' . $x . '<br>';
     $deltas = getDelta($x, $variables['y'], $variables['z'], $h);
     echo 'y<sub>' . ($i - 1) . '</sub> = ' . formatFloat($variables['y']) . ', z<sub>' . ($i - 1) . '</sub> = ' . formatFloat($variables['z']) . '<br>';
     $variables['y'] += $deltas['y'];
