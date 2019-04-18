@@ -40,7 +40,7 @@ function getDelta ($x, $y, $z, $h, $alpha, $beta) {
 }
 
 function calculateDelta ($k1, $k2, $k3, $k4, $var) {
-    return 1/6 * ($k1[$var] * $k2[$var] * $k3[$var] * $k4[$var]);
+    return 1/6 * ($k1[$var] + 2 * $k2[$var] + 2 *  $k3[$var] + $k4[$var]);
 }
 
 function getEquationResult ($x, $y, $z, $h, $alpha, $beta) {
